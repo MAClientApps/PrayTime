@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/sheet_background">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/arabic_lay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:textColor="?blackWhite"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Preview"/>
+
+            <LinearLayout
+                android:id="@+id/render"
+                android:background="@drawable/ayat_sheet_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/ayat_pos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textColor="?blackWhite"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="4dp"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:background="?blackWhite"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/ayat_pos"
+                        app:layout_constraintEnd_toEndOf="@id/ayat_pos"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/arabic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textColor="?blackWhite"
+                    android:fontFamily="@font/al_qalam"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/translation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:textColor="?accent"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:background="?translitaration"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Rendered by Islam"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/taj_weed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tajweed       "
+        android:fontFamily="@font/open_sans_bold"
+        app:layout_constraintBottom_toTopOf="@id/arabic_lay"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/arabic_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/t_size">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Arabic Size"
+            android:textColor="?blackWhite"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/arabic_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:max="25"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/t_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/share_lay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Translation Size"
+            android:textColor="?blackWhite"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/translation_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:max="25"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/closet"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/share_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            app:backgroundTint="?accent"
+            android:textColor="@color/white"
+            android:drawableTint="@color/white"
+            android:drawableLeft="@drawable/ic_share"
+            android:textAllCaps="false"
+            app:cornerRadius="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/share_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:backgroundTint="?accent"
+            app:cornerRadius="8dp"
+            android:drawableTint="@color/white"
+            android:drawableLeft="@drawable/ic_share"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="Image"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/closet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:background="@drawable/sheet_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Close"
+        android:elevation="4dp"
+        android:backgroundTint="#F44336"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        android:textSize="@dimen/_16sdp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:gravity="center"
+        android:padding="@dimen/_6sdp"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

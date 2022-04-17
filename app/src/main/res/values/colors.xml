@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    <color name="green">#31916C</color>-->
+    <color name="green">#EBB070</color>
+<!--    <color name="green">#43a043</color>-->
+    <!--    <color name="purple">#6f32c3</color>-->
+    <color name="blue">#2196F3</color>
+    <color name="orange">#FF9800</color>
+
+    <color name="purpleLight">#A662FF</color>
+
+    <color name="darkGray">#202020</color>
+
+    //
+    <color name="grey_600">#757575</color>
+    <color name="green_300">#81C784</color>
+    <color name="textColorLight">#fff</color>
+
+    <color name="frame">#0D000000</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="brown">#CA6E0B</color>
+
+</resources>

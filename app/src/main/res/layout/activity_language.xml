@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.LanguageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            style="?attr/collapsingToolbarLayoutLargeStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
+            app:expandedTitleMarginBottom="24dp"
+            app:expandedTitleMarginEnd="24dp"
+            app:expandedTitleMarginStart="24dp"
+            app:statusBarScrim="?cardBack"
+            app:expandedTitleTextAppearance="@style/TextViewHeadline4"
+            app:collapsedTitleTextAppearance="@style/TextViewHeadline6"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap|enterAlwaysCollapsed">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/Toolbar"
+                app:title="@string/language"
+                android:layout_height="?actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIconTint="?blackWhite"
+                app:navigationIcon="@drawable/ic_baseline_keyboard_backspace_24"
+                app:titleTextAppearance="@style/ToolbarTextAppearanceNormal" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RadioGroup
+        android:id="@+id/language_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textSize="@dimen/_14sdp"
+            app:buttonTint="?accent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:paddingStart="@dimen/_16sdp"/>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/bangla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bangla"
+            android:textSize="@dimen/_14sdp"
+            app:buttonTint="?accent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:paddingStart="@dimen/_16sdp"/>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/turkish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turkish"
+            android:textSize="@dimen/_14sdp"
+            app:buttonTint="?accent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:paddingStart="@dimen/_16sdp"/>
+
+    </RadioGroup>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.code.apppraytime.screen.layout.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_salat"
+            app:destination="@id/nav_salat"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_salat"
+        android:name="com.code.apppraytime.screen.layout.Salat"
+        android:label="fragment_salat"
+        tools:layout="@layout/fragment_salat" >
+        <action
+            android:id="@+id/action_salat_to_nav_video"
+            app:destination="@id/nav_video" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_video"
+        android:name="com.code.apppraytime.screen.layout.Video"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" >
+        <action
+            android:id="@+id/action_video_to_nav_settings"
+            app:destination="@id/nav_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.code.apppraytime.screen.layout.Settings"
+        android:label="fragment_salat"
+        tools:layout="@layout/fragment_salat" >
+        <action
+            android:id="@+id/action_settings_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+</navigation>

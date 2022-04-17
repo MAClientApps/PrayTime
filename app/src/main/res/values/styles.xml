@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="Widget.Islam.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">@drawable/widget_back</item>
+    </style>
+
+    <style name="Widget.Islam.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Widget.AppWidget.ImageView.WeatherIcon" parent="android:Widget" />
+
+</resources>

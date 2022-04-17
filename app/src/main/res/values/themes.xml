@@ -1,0 +1,314 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="FullScreen" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="ThemeLightGreen" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green</item>
+        <item name="colorSecondaryVariant">@color/green</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowBackground">#F7FAF9</item>
+        <item name="android:statusBarColor">?android:windowTranslucentStatus</item>
+        <!--        <item name="android:statusBarColor">?android:colorBackground</item>-->
+        <!--        <item name="android:statusBarColor" tools:targetApi="l">#EDF0FE</item>-->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">#EFF3EE</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <!--        <item name="android:windowTranslucentNavigation" tools:targetApi="o_mr1">true</item>-->
+
+        <!-- Customize your theme here. -->
+        <item name="chipStyle">@style/Chip_Style</item>
+
+
+        //Attribute
+        <item name="banner">@drawable/banner_purple</item>
+        <item name="bismillah">@drawable/bismillah_black</item>
+
+        <item name="whiteBlack">#ffffff</item>
+        <item name="blackWhite">#000000</item>
+        <item name="surahName">#250000</item>
+        <item name="search">#EAE5E5</item>
+        <item name="searchSheet">#E6FFFFFF</item>
+        <item name="accent">@color/green</item>
+<!--        <item name="translitaration">#1A43A043</item>-->
+        <item name="translitaration">#50EBB070</item>
+        <item name="cardBack">#EFF3EE</item>
+        <item name="textNatural">#80000000</item>
+    </style>
+
+    <style name="ThemeLightBlue" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowBackground">#F0F3F6</item>
+        <item name="android:statusBarColor">?android:windowTranslucentStatus</item>
+        <!--        <item name="android:statusBarColor" tools:targetApi="l">?android:colorBackground</item>-->
+        <!--        <item name="android:statusBarColor" tools:targetApi="l">#EDF0FE</item>-->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">#EDF0FE</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <!--        <item name="android:windowTranslucentNavigation" tools:targetApi="o_mr1">true</item>-->
+
+        <!-- Customize your theme here. -->
+        <item name="chipStyle">@style/Chip_Style</item>
+
+
+        //Attribute
+        <item name="banner">@drawable/banner_blue</item>
+        <item name="bismillah">@drawable/bismillah_black</item>
+
+        <item name="whiteBlack">#ffffff</item>
+        <item name="blackWhite">#000000</item>
+        <item name="surahName">#250000</item>
+        <item name="search">#EAE5E5</item>
+        <item name="searchSheet">#E6FFFFFF</item>
+        <item name="accent">@color/blue</item>
+        <item name="translitaration">#1A2196F3</item>
+        <item name="cardBack">#EDF0FE</item>
+        <item name="textNatural">#80000000</item>
+    </style>
+
+    <style name="ThemeLightOrange" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondaryVariant">@color/orange</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowBackground">#F8F6F3</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?android:windowTranslucentStatus</item>
+        <!--        <item name="android:statusBarColor" tools:targetApi="l">?android:colorBackground</item>-->
+        <!--        <item name="android:statusBarColor" tools:targetApi="l">#EDF0FE</item>-->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">#FFF2E9</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <!--        <item name="android:windowTranslucentNavigation" tools:targetApi="o_mr1">true</item>-->
+
+        <!-- Customize your theme here. -->
+        <item name="chipStyle">@style/Chip_Style</item>
+
+
+        //Attribute
+        <item name="banner">@drawable/banner_orange</item>
+        <item name="bismillah">@drawable/bismillah_black</item>
+
+        <item name="whiteBlack">#ffffff</item>
+        <item name="blackWhite">#000000</item>
+        <item name="surahName">#250000</item>
+        <item name="search">#EAE5E5</item>
+        <item name="searchSheet">#E6FFFFFF</item>
+        <item name="accent">@color/orange</item>
+        <item name="translitaration">#1AFF9800</item>
+        <item name="cardBack">#FFF2E9</item>
+        <item name="textNatural">#80000000</item>
+    </style>
+
+    //Dark Theme Part
+
+    <style name="ThemeDarkGreen" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green</item>
+        <item name="colorSecondaryVariant">@color/green</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?android:windowTranslucentStatus</item>
+        <!--        <item name="android:statusBarColor" tools:targetApi="l">?android:colorBackground</item>-->
+        <item name="android:navigationBarColor">#1F2521</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <!-- Customize your theme here. -->
+
+        <item name="chipStyle">@style/Chip_Style</item>
+        <item name="bismillah">@drawable/bismillah</item>
+
+
+        //Attribute
+        <item name="banner">@drawable/banner_purple</item>
+
+        <item name="whiteBlack">#000000</item>
+        <item name="blackWhite">#ffffff</item>
+        <item name="surahName">#FFEFEF</item>
+        <item name="search">#403D3D</item>
+        <item name="searchSheet">#E6232323</item>
+        <item name="accent">@color/green</item>
+        <item name="translitaration">#1A2196F3</item>
+        <item name="cardBack">#1F2521</item>
+        <item name="textNatural">#80FFFFFF</item>
+    </style>
+
+    <style name="ThemeDarkBlue" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?android:windowTranslucentStatus</item>
+        <!--        <item name="android:statusBarColor" tools:targetApi="l">?android:colorBackground</item>-->
+        <item name="android:navigationBarColor">#1C2530</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <!-- Customize your theme here. -->
+
+        <item name="chipStyle">@style/Chip_Style</item>
+
+
+        //Attribute
+        <item name="banner">@drawable/banner_blue</item>
+        <item name="bismillah">@drawable/bismillah</item>
+
+        <item name="whiteBlack">#000000</item>
+        <item name="blackWhite">#ffffff</item>
+        <item name="surahName">#FFEFEF</item>
+        <item name="search">#403D3D</item>
+        <item name="searchSheet">#E6232323</item>
+        <item name="accent">@color/blue</item>
+        <item name="translitaration">#1A2196F3</item>
+        <item name="cardBack">#1C2530</item>
+        <item name="textNatural">#80FFFFFF</item>
+    </style>
+
+    <style name="ThemeDarkOrange" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondaryVariant">@color/orange</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?android:windowTranslucentStatus</item>
+        <!--        <item name="android:statusBarColor" tools:targetApi="l">?android:colorBackground</item>-->
+        <item name="android:navigationBarColor">#2E251C</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <!-- Customize your theme here. -->
+
+        <item name="chipStyle">@style/Chip_Style</item>
+
+
+        //Attribute
+        <item name="banner">@drawable/banner_orange</item>
+        <item name="bismillah">@drawable/bismillah</item>
+
+        <item name="whiteBlack">#000000</item>
+        <item name="blackWhite">#ffffff</item>
+        <item name="surahName">#FFEFEF</item>
+        <item name="search">#403D3D</item>
+        <item name="searchSheet">#E6232323</item>
+        <item name="accent">@color/orange</item>
+        <item name="translitaration">#1AFF9800</item>
+        <item name="cardBack">#2E251C</item>
+        <item name="textNatural">#80FFFFFF</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="bottomSheet" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="bottomSheetDark" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="RadioGroup" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorAccent">?accent</item>
+    </style>
+
+    <style name="Chip_Style" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/background_chip_color</item>
+        <item name="android:textColor">@color/text_chip_color</item>
+        <item name="checkedIconVisible">true</item>
+        <item name="checkedIcon">@drawable/ic_check</item>
+    </style>
+
+    <style name="SequenceLayout">
+        <item name="progressForegroundColor">?colorAccent</item>
+        <item name="progressBackgroundColor">#ccc</item>
+    </style>
+
+    <style name="SequenceStep">
+        <item name="anchorTextAppearance">@style/TextAppearance.AppCompat.Small</item>
+        <item name="titleTextAppearance">@style/TextAppearance.AppCompat.Small</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="anchorMinWidth">@dimen/sequence_anchor_min_width</item>
+        <item name="anchorMaxWidth">@dimen/sequence_anchor_max_width</item>
+    </style>
+
+    <style name="titleMax" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="titleMid" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/open_sans_bold</item>
+        <item name="android:textColor">?textNatural</item>
+    </style>
+
+    <style name="titleMin" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+    </style>
+
+    <style name="ThemeLightBlue.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">16dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+<!--    <style name="MyWidgetTheme" parent="Theme.DeviceDefault.Light"/>-->
+
+    <style name="Widget.AppWidget.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="ThemeLightBlue.AppWidgetContainer" parent="ThemeLightBlue.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">16dp</item>
+    </style>
+
+</resources>

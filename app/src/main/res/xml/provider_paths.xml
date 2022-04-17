@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-cache-path name="external_files" path="share/"/>
+    <external-cache-path name="user_image" path="Android/data/com.code.islam/files/Pictures"/>
+</paths>

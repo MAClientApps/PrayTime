@@ -1,0 +1,18 @@
+include ':app'
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url "https://artifactory.appodeal.com/appodeal"
+        }
+        maven { url 'https://jitpack.io' }
+        maven { url "https://maven.google.com" }
+        maven { url = uri("https://dl.bintray.com/kotlin/kotlin-eap") }
+        jcenter()
+
+    }
+}
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.SurahActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/_6sdp"
+        app:tint="?blackWhite"
+        android:layout_margin="@dimen/_6sdp"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_24sdp"
+        app:tabUnboundedRipple="false"
+        app:tabMode="scrollable"
+        app:tabPaddingStart="@dimen/_14sdp"
+        app:tabPaddingEnd="@dimen/_14sdp"
+        android:background="?android:windowBackground"
+        android:layout_marginStart="@dimen/_14sdp"
+        app:tabIndicatorFullWidth="false"
+        app:layout_constraintTop_toTopOf="@id/back"
+        app:layout_constraintStart_toEndOf="@id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/back"
+        app:tabTextAppearance="@style/TabTextAppearance" />
+
+<!--    <androidx.viewpager2.widget.ViewPager2-->
+<!--        android:id="@+id/q_pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="@dimen/_6sdp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tab_layout"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/q_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"
+        app:layout_constraintBottom_toTopOf="@id/music_container"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/music_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        android:background="?android:navigationBarColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="?blackWhite"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/m_lay"/>
+
+        <LinearLayout
+            android:id="@+id/m_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/play_pause"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:tint="?blackWhite"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_pause"/>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:tint="?blackWhite"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_close"/>
+
+        </LinearLayout>
+        <com.appodeal.ads.BannerView
+            android:id="@+id/adsbannenr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toTopOf="@+id/music_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

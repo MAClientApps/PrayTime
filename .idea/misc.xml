@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.25025641025641027" />
+        <entry key="../../../../layout/custom_preview.xml" value="0.21897435897435896" />
+        <entry key="app/src/main/res/drawable/count.xml" value="0.1195" />
+        <entry key="app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.1195" />
+        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.1195" />
+        <entry key="app/src/main/res/drawable/ic_qibla_compass.xml" value="0.1195" />
+        <entry key="app/src/main/res/drawable/top_item_back.xml" value="0.1195" />
+        <entry key="app/src/main/res/drawable/white_border.xml" value="0.1195" />
+        <entry key="app/src/main/res/font/open_sans.xml" value="0.2212962962962963" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.11197916666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18055555555555555" />
+        <entry key="app/src/main/res/layout/activity_mosque.xml" value="0.182518115942029" />
+        <entry key="app/src/main/res/layout/activity_praytime_preium.xml" value="0.21875" />
+        <entry key="app/src/main/res/layout/activity_qibla.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/activity_quran.xml" value="0.22673017713758684" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18055555555555555" />
+        <entry key="app/src/main/res/layout/activity_surah.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/activity_tasbih.xml" value="0.11068895643363728" />
+        <entry key="app/src/main/res/layout/activity_translation.xml" value="0.11068895643363728" />
+        <entry key="app/src/main/res/layout/activity_video_list.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.21565277099609376" />
+        <entry key="app/src/main/res/layout/fragment_salat.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/fragment_surah_ayat.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/layout_ayat_header.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/layout_ayat_reading.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/layout_surah_name.xml" value="0.18055555555555555" />
+        <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.126" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_stat_onesignal_default.xml" value="0.126" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="4dp"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:foreground="?selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="?accent"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="?blackWhite"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/al_qalam"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/pron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="?blackWhite"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="?translitaration"
+        android:fontFamily="@font/comfortaa_bold" />
+
+    <TextView
+        android:id="@+id/trans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="?blackWhite"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/comfortaa_bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#40838383"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>
